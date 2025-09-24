@@ -256,7 +256,7 @@ export default function Index() {
               
               <div className="text-center">
                 <img 
-                  src="/img/1c4ca10a-c4e8-4697-a717-3224d755bb21.jpg" 
+                  src="/img/9b60790c-d592-456d-86b6-f7036e112fe4.jpg" 
                   alt="Уверенный мужчина"
                   className="rounded-lg shadow-2xl max-w-full h-auto"
                 />
