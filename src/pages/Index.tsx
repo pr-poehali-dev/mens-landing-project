@@ -533,9 +533,9 @@ export default function Index() {
                 
                 <div className="bg-white/10 p-4 rounded-lg">
                   <p className="text-center">
-                    <span className="text-3xl font-bold">89 000 ₽</span>
+                    <span className="text-3xl font-bold">99 000 ₽</span>
                     <br />
-                    <span className="opacity-75">или 30 000 ₽ × 3 месяца</span>
+                    <span className="opacity-75">или 33 000 ₽ × 3 месяца</span>
                   </p>
                 </div>
               </div>
