@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Icon from '@/components/ui/icon';
+import AnimatedTestimonial from '@/components/AnimatedTestimonial';
 
 export default function Index() {
   const [formData, setFormData] = useState({
@@ -409,7 +410,7 @@ export default function Index() {
               <div className="space-y-6">
                 <h3 className="text-2xl font-semibold mb-6">Отзывы клиентов</h3>
                 
-                {[
+{[
                   {
                     name: "Александр, 38 лет",
                     text: "После развода думал, что жизнь закончена. За 3 месяца работы полностью изменил мышление. Теперь у меня отличные отношения с сыном и новая любовь.",
@@ -429,30 +430,7 @@ export default function Index() {
                     photo: "https://cdn.poehali.dev/files/26c1a51e-c344-4a55-b44a-c09faed18cc3.jpeg"
                   }
                 ].map((testimonial, index) => (
-                  <Card key={index} className="bg-white">
-                    <CardContent className="pt-6">
-                      <div className="flex items-start space-x-4 mb-4">
-                        <img 
-                          src={testimonial.photo} 
-                          alt={testimonial.name}
-                          className="w-16 h-16 rounded-full object-cover flex-shrink-0"
-                        />
-                        <div className="flex-1">
-                          <div className="flex items-center space-x-1 mb-2">
-                            {[...Array(testimonial.rating)].map((_, i) => (
-                              <Icon key={i} name="Star" className="text-yellow-400 fill-current" size={16} />
-                            ))}
-                          </div>
-                          <cite className="font-semibold text-foreground block mb-2">
-                            {testimonial.name}
-                          </cite>
-                        </div>
-                      </div>
-                      <blockquote className="text-muted-foreground italic">
-                        "{testimonial.text}"
-                      </blockquote>
-                    </CardContent>
-                  </Card>
+                  <AnimatedTestimonial key={index} testimonial={testimonial} index={index} />
                 ))}
               </div>
             </div>
