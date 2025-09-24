@@ -7,6 +7,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Icon from '@/components/ui/icon';
 import AnimatedTestimonial from '@/components/AnimatedTestimonial';
+import CountdownTimer from '@/components/CountdownTimer';
 
 export default function Index() {
   const [formData, setFormData] = useState({
@@ -531,12 +532,22 @@ export default function Index() {
                   </ul>
                 </div>
                 
-                <div className="bg-white/10 p-4 rounded-lg">
-                  <p className="text-center">
-                    <span className="text-3xl font-bold">99 000 ₽</span>
+                <CountdownTimer />
+                
+                <div className="bg-white/10 p-4 rounded-lg text-center">
+                  <div className="mb-2">
+                    <span className="text-xl line-through opacity-60">149 000 ₽</span>
+                  </div>
+                  <p>
+                    <span className="text-3xl font-bold text-yellow-300">99 000 ₽</span>
                     <br />
                     <span className="opacity-75">или 33 000 ₽ × 3 месяца</span>
                   </p>
+                  <div className="mt-2">
+                    <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                      Скидка 33%
+                    </span>
+                  </div>
                 </div>
               </div>
 
